@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        android:padding="5dp"
+        android:layout_marginStart="5dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginEnd="5dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvItem_Add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="7"
+                android:hint="Items"
+                android:textColor="#000000"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/ivCancel_Item"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/remove_" />
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
